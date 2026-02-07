@@ -1,0 +1,42 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "enables the default permissions",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    {
+      "identifier": "fs:allow-read-text-file",
+      "allow": [
+        { "path": "$HOME/.config/ghostty" },
+        { "path": "$HOME/.config/ghostty/**" }
+      ]
+    },
+    {
+      "identifier": "fs:allow-write-text-file",
+      "allow": [
+        { "path": "$HOME/.config/ghostty" },
+        { "path": "$HOME/.config/ghostty/**" }
+      ]
+    },
+    {
+      "identifier": "fs:allow-exists",
+      "allow": [
+        { "path": "$HOME/.config/ghostty" },
+        { "path": "$HOME/.config/ghostty/**" }
+      ]
+    },
+    {
+      "identifier": "fs:allow-mkdir",
+      "allow": [
+        { "path": "$HOME/.config" },
+        { "path": "$HOME/.config/ghostty" },
+        { "path": "$HOME/.config/ghostty/**" }
+      ]
+    },
+    "dialog:allow-open",
+    "dialog:allow-save"
+  ]
+}

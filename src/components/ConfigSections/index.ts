@@ -1,0 +1,9 @@
+export { FontSection } from './FontSection';
+export { ColorsSection } from './ColorsSection';
+export { CursorSection } from './CursorSection';
+export { WindowSection } from './WindowSection';
+export { MouseScrollSection } from './MouseScrollSection';
+export { ClipboardSection } from './ClipboardSection';
+export { ShellSection } from './ShellSection';
+export { KeybindingsSection } from './KeybindingsSection';
+export { AdvancedSection } from './AdvancedSection';
