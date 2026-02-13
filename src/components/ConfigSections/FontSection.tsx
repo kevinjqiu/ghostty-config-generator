@@ -1,13 +1,13 @@
 import React from 'react';
 import { useConfig } from '../../context/ConfigContext';
-import { TextInput, NumberInput, Toggle } from '../Controls';
+import { TextInput, NumberInput, Toggle, FontCombobox } from '../Controls';
 
 export const FontSection: React.FC = () => {
   const { getValue, setValue } = useConfig();
 
   return (
     <div className="space-y-6">
-      <TextInput
+      <FontCombobox
         label="Font Family"
         value={getValue('fontFamily')}
         onChange={(v) => setValue('fontFamily', v)}
