@@ -110,10 +110,10 @@ export const PreviewPanel: React.FC = () => {
         </pre>
       </div>
 
-      <div className="p-4 border-t border-gray-800">
+      <div className="p-4 border-t border-gray-800 flex flex-col min-h-0">
         <h3 className="text-sm font-semibold text-gray-200 mb-3">Quick Presets</h3>
-        <div className="grid grid-cols-2 gap-2 mb-3">
-          {presets.slice(0, 6).map((preset) => (
+        <div className="grid grid-cols-2 gap-2 mb-3 overflow-y-auto max-h-48">
+          {presets.map((preset) => (
             <button
               key={preset.name}
               onClick={() => applyPreset(preset.config)}
